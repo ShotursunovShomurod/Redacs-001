@@ -1,12 +1,18 @@
 import { IoLocationOutline } from "react-icons/io5";
 import { FaHeadphonesAlt } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
+import Logo from '@/assets/logo.jpg';
 import { CiClock1 } from "react-icons/ci";
 const Footer = () => {
   return (
     <div className="container mx-auto mt-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-8">
         <div className="flex flex-col gap-5">
+          <img
+            className="w-[120px] object-contain h-[40px]"
+            src={Logo}
+            alt=""
+          />
           <div className="flex items-start md:flex lg:flex gap-[8px] ">
             <button className="pt-[5px]">
               <IoLocationOutline />

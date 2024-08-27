@@ -24,8 +24,8 @@ const Home = () => {
       <Pagination
         current={skip}
         onChange={handlChange}
-        className="mt-5 mr-[90px]"
-        align="end"
+        className="mt-5"
+        align="center"
         defaultCurrent={1}
         defaultPageSize={limit}
         total={data?.total}

@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "antd";
 import { FaHeart } from "react-icons/fa";
 import { useStateValue } from "@/context/index";
-import Skeletons from "@/components/Skeloton/Skeletons";
+import Skeletons from "@/components/skelotons/skeletons";
 import { CiStar } from "react-icons/ci";
 
 const Products = ({ data, loading }) => {
@@ -14,7 +14,7 @@ const Products = ({ data, loading }) => {
   
   return (
     <div className="container mx-auto mt-7 mb-6">
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-36 gap-6">
+      <div className="grid grid-cols-2 mt-32 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
         {data?.map((product) => (
           <Card
             key={product.id}

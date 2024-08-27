@@ -15,21 +15,21 @@ const Login = () => {
     try {
       const response = await axios.post("/auth/login", values);
       dispatch({ type: "LOGIN", payload: response.data.token });
-      messageApi.success("Welcome back!");
+      messageApi.success("Log in successful!");
       navigate("/");
     } catch (error) {
-      messageApi.error("Incorrect username or password!");
-      console.error("Login failed:", error);
+      messageApi.error("Username or password is incorrect!");
+      console.error("Login error:", error);
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <div className="flex h-screen items-center justify-center bg-gray-50">
+    <div className="flex h-screen items-center justify-center">
       {contextHolder}
-      <div className="w-[400px] bg-white p-8 rounded-lg shadow-lg">
-        <h3 className="text-center text-4xl font-semibold text-gray-800 mb-8">Sign In</h3>
+      <div className="w-[400px] bg-white p-6 rounded shadow-md">
+        <h3 className="text-center text-3xl mb-6">Login</h3>
         <Form
           name="login"
           layout="vertical"
@@ -44,7 +44,7 @@ const Login = () => {
               { required: true, message: "Please enter your username!" },
             ]}
           >
-            <Input size="large" placeholder="Enter your username" />
+            <Input placeholder="Username" />
           </Form.Item>
 
           <Form.Item
@@ -54,7 +54,7 @@ const Login = () => {
               { required: true, message: "Please enter your password!" },
             ]}
           >
-            <Input.Password size="large" placeholder="Enter your password" />
+            <Input.Password placeholder="Password" />
           </Form.Item>
 
           <Form.Item>
@@ -62,9 +62,9 @@ const Login = () => {
               type="primary"
               htmlType="submit"
               loading={loading}
-              className="w-full text-lg"
+              className="w-full"
             >
-              Sign In
+              Login
             </Button>
           </Form.Item>
         </Form>

@@ -5,7 +5,7 @@ import { RiMenu2Fill } from "react-icons/ri";
 import { Link, NavLink } from "react-router-dom";
 import { useStateValue } from "@/context/index";
 import { GrLogout } from "react-icons/gr";
-import Logo from '@/assets/logo.png';
+import Logo from '@/assets/logo.jpg';
 
 const Header = () => {
   const [{ wishlist, cart }, dispatch] = useStateValue();
