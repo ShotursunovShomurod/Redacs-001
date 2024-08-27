@@ -1,5 +1,5 @@
-import Footer from "@/components/Footer/Footer";
-import Hader from "@/components/Header/Header";
+import Footer from "@/components/footer/footer";
+import Hader from "@/components/header/header";
 import React from "react";
 import { Outlet } from "react-router-dom";
 
