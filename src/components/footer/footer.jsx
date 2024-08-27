@@ -113,15 +113,6 @@ const Footer = () => {
           <p className="text-[14px] text-[#253D4E] text-start">Cheese</p>
         </div>
       </div>
-      <hr />
-      <div className=" flex flex-col gap-1 items-center mt-[20px]">
-        <p className="text-[15px] text-[#0009] text-start">
-          © 2022, Nest - HTML Ecommerce Template
-        </p>
-        <p className="text-[12px] text-start text-[#0009]">
-          All rights reserved
-        </p>
-      </div>
     </div>
   );
 };
