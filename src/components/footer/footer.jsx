@@ -7,11 +7,6 @@ const Footer = () => {
     <div className="container mx-auto mt-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-8">
         <div className="flex flex-col gap-5">
-          <img
-            className="w-[120px] object-contain h-[40px]"
-            src="https://logodix.com/logo/26494.png"
-            alt=""
-          />
           <div className="flex items-start md:flex lg:flex gap-[8px] ">
             <button className="pt-[5px]">
               <IoLocationOutline />
